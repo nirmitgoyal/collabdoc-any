@@ -1,0 +1,36 @@
+# This task is bring-your-own-stack, so this ignores build output and dependency dirs across the
+# common languages — `submit` bundles the whole working tree, and you don't want megabytes of deps
+# in your submission. Add your own entries as needed.
+
+# Session bookkeeping
+.hi/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / TypeScript
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Java / JVM
+target/
+.gradle/
+*.class
+
+# Go
+# (built binaries — adjust to your binary name if needed)
+bin/
+
+# .NET
+obj/
+# bin/ already covered above
+
+# Databases / misc
+*.db
+.DS_Store
