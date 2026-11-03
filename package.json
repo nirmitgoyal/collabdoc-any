@@ -1,0 +1,11 @@
+{
+  "name": "syncpad",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs && playwright test",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {"@playwright/test": "1.64.1"}
+}

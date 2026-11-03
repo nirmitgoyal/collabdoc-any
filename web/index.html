@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syncpad</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f5f1; color: #252722; font-family: system-ui, sans-serif; }
+    main { max-width: 860px; margin: 0 auto; padding: clamp(16px, 4vw, 48px); }
+    textarea { display: block; width: 100%; min-height: 78vh; padding: clamp(16px, 4vw, 36px); border: 1px solid #caccc4; border-radius: 6px; background: #fffefb; color: inherit; font: 18px/1.65 system-ui, sans-serif; resize: vertical; }
+    textarea:focus-visible { outline: 3px solid #387364; outline-offset: 4px; }
+    [role="alert"] { line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <textarea aria-label="Document" readonly spellcheck="false"></textarea>
+    <p role="alert" hidden></p>
+  </main>
+  <script type="module" src="/editor.mjs"></script>
+</body>
+</html>

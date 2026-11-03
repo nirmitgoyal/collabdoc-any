@@ -34,3 +34,8 @@ obj/
 # Databases / misc
 *.db
 .DS_Store
+
+# Local execution and browser test output
+.superpowers/
+test-results/
+playwright-report/
